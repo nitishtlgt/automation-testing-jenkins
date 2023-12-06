@@ -26,4 +26,4 @@ def test_github_login(browser):
     assert browser.find_element("xpath", '//*[@id="rcnt"]/div[2]/div/div/div[3]/div[1]/div/div/div/div[1]/div/div')
 
 if __name__ == "__main__":
-    pytest.main([__file__])
+    pytest.main([__file__, "--html=report.html"])
